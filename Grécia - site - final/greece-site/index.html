@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greece — Ελλάδα | Oral Presentation</title>
+<meta name="description" content="An oral-test companion site on Greece: geography, holidays, culture, language and gastronomy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ PROGRESS + NAV ============ -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-nav" id="siteNav">
+  <a href="#top" class="nav-mark">
+    <span class="nav-mark-gr">Ε</span><span class="nav-mark-en">GR</span>
+  </a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav-links" id="navLinks">
+    <a href="#location" data-word="Τοποθεσία">Location</a>
+    <a href="#land-sea" data-word="Γη &amp; Θάλασσα">Land &amp; Sea</a>
+    <a href="#holidays" data-word="Γιορτές">Holidays</a>
+    <a href="#culture" data-word="Πολιτισμός">Culture</a>
+    <a href="#language" data-word="Γλώσσα">Language</a>
+    <a href="#food" data-word="Γαστρονομία">Gastronomy</a>
+    <a href="#facts" data-word="Ξέρατε ότι...">Fun Facts</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-img" style="background-image:url('images/parthenon-sunset.jpg')"></div>
+  <div class="hero-scrim"></div>
+  <div class="hero-content">
+    <p class="eyebrow eyebrow-light"><span class="gr">Καλώς ήρθατε</span><span class="sep">·</span><span class="en">welcome</span></p>
+    <h1 class="hero-title">
+      <span class="gr-line">Ελλάδα</span>
+      <span class="en-line">Greece</span>
+    </h1>
+    <div class="hero-meta">
+      <div class="flag-chip" aria-hidden="true">
+        <svg viewBox="0 0 30 20" class="flag-svg"><use href="#flag-greece"></use></svg>
+      </div>
+      <ul class="hero-facts">
+        <li><span class="hf-label">Capital</span><span class="hf-value">Athens</span></li>
+        <li><span class="hf-label">Region</span><span class="hf-value">Southeastern Europe</span></li>
+        <li><span class="hf-label">Language</span><span class="hf-value">Greek</span></li>
+      </ul>
+    </div>
+  </div>
+  <a href="#location" class="scroll-cue" aria-label="Scroll down">
+    <span></span> Scroll
+  </a>
+</section>
+
+<!-- SVG DEFS (flag, meander pattern) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="flag-greece">
+      <rect width="30" height="20" fill="#0D5EAF"/>
+      <g fill="#fff">
+        <rect y="1.538" width="30" height="1.538"/>
+        <rect y="4.615" width="30" height="1.538"/>
+        <rect y="7.692" width="30" height="1.538"/>
+        <rect y="10.769" width="30" height="1.538"/>
+        <rect y="13.846" width="30" height="1.538"/>
+        <rect y="16.923" width="30" height="1.538"/>
+      </g>
+      <rect width="12" height="10.769" fill="#0D5EAF"/>
+      <g fill="#fff">
+        <rect x="4.6" width="2.8" height="10.769"/>
+        <rect y="4.3" width="12" height="2.15"/>
+      </g>
+    </g>
+  </defs>
+</svg>
+
+<main>
+
+<!-- ============ MEANDER DIVIDER (reusable) ============ -->
+<!-- inserted via CSS ::before using .key-divider -->
+
+<!-- ============ LOCATION / BASICS ============ -->
+<section class="section" id="location">
+  <div class="key-divider" aria-hidden="true"></div>
+  <div class="wrap two-col">
+    <div class="col-text">
+      <p class="eyebrow"><span class="gr">Τοποθεσία</span><span class="sep">·</span><span class="en">Location</span></p>
+      <h2 class="h2">A peninsula<br>reaching into<br>three seas</h2>
+      <ul class="bullet-list">
+        <li>Southeastern Europe, at the tip of the Balkan Peninsula</li>
+        <li>Borders: Albania (NW), North Macedonia &amp; Bulgaria (N), Turkey (NE)</li>
+        <li>Coastline on the Aegean, Ionian &amp; Mediterranean seas</li>
+        <li>Capital: <strong>Athens</strong> — named after the goddess Athena</li>
+        <li>Around 6,000 islands and islets; only 227 are inhabited</li>
+      </ul>
+    </div>
+    <div class="col-visual">
+      <div class="flag-card">
+        <svg viewBox="0 0 30 20" class="flag-svg-large"><use href="#flag-greece"></use></svg>
+        <div class="flag-caption">
+          <span class="fc-title">The flag</span>
+          <p>Nine stripes for the syllables of <em>“Ελευθερία ή Θάνατος”</em> — “Freedom or Death.” Blue &amp; white echo sea, sky and foam; the cross marks Orthodox Christianity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LAND & SEA (geography → food/traditions) ============ -->
+<section class="section section-break" id="land-sea">
+  <div class="break-img" style="background-image:url('images/parthenon-wide.jpg')"></div>
+  <div class="wrap">
+    <p class="eyebrow"><span class="gr">Η γη &amp; η θάλασσα</span><span class="sep">·</span><span class="en">Land &amp; Sea</span></p>
+    <h2 class="h2">Geography wrote the menu</h2>
+    <p class="lede">80% of Greece is mountainous, the rest is coastline and island — that split shapes almost everything Greeks eat and celebrate.</p>
+    <div class="grid-3">
+      <div class="feature-card reveal">
+        <span class="fc-icon" aria-hidden="true">⛰</span>
+        <h3>Mountains</h3>
+        <ul class="bullet-list tight">
+          <li>Sheep &amp; goat grazing on rocky slopes</li>
+          <li>Feta and other sheep/goat cheeses</li>
+          <li>Hearty stews, pies, wild greens (<em>horta</em>)</li>
+        </ul>
+      </div>
+      <div class="feature-card reveal">
+        <span class="fc-icon" aria-hidden="true">🌊</span>
+        <h3>Coastline</h3>
+        <ul class="bullet-list tight">
+          <li>13,676 km of coast — longest in the Mediterranean</li>
+          <li>Fresh fish &amp; seafood as a daily staple</li>
+          <li>Port towns built around fishing and trade</li>
+        </ul>
+      </div>
+      <div class="feature-card reveal">
+        <span class="fc-icon" aria-hidden="true">☀</span>
+        <h3>Sun &amp; Soil</h3>
+        <ul class="bullet-list tight">
+          <li>250+ sunny days a year</li>
+          <li>Olive trees everywhere — oil is the cooking base</li>
+          <li>Dry hillsides suit grapevines and wine</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOLIDAYS & FESTIVALS ============ -->
+<section class="section" id="holidays">
+  <div class="key-divider" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow"><span class="gr">Γιορτές</span><span class="sep">·</span><span class="en">Holidays &amp; Festivals</span></p>
+    <h2 class="h2">A year, in celebrations</h2>
+    <p class="lede">Arranged as they fall across the calendar — each one rooted in either faith or history.</p>
+
+    <ol class="timeline">
+      <li class="tl-item reveal">
+        <span class="tl-date">Jan – Mar</span>
+        <div class="tl-body">
+          <h3>Apokries (Carnival)</h3>
+          <ul class="bullet-list tight">
+            <li>Three weeks of costumes, parades and street parties before Lent</li>
+            <li>“Tsiknopempti” (Smoky Thursday) — a citywide grilling feast</li>
+            <li>Patras hosts Greece's biggest carnival parade</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <span class="tl-date">Mar 25</span>
+        <div class="tl-body">
+          <h3>Independence Day</h3>
+          <ul class="bullet-list tight">
+            <li>Marks the 1821 uprising against 400 years of Ottoman rule</li>
+            <li>Coincides with the religious Feast of the Annunciation</li>
+            <li>Military &amp; school parades nationwide</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <span class="tl-date">Spring</span>
+        <div class="tl-body">
+          <h3>Orthodox Easter (Pascha)</h3>
+          <ul class="bullet-list tight">
+            <li>Greece's most important holiday — date follows the Orthodox calendar</li>
+            <li>Midnight Resurrection service, candles carried home lit</li>
+            <li>Red-dyed eggs cracked to symbolise Christ's rebirth</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <span class="tl-date">Oct 28</span>
+        <div class="tl-body">
+          <h3>Ochi Day</h3>
+          <ul class="bullet-list tight">
+            <li>“Ochi” = “No” — PM Metaxas's 1940 refusal of Italy's ultimatum</li>
+            <li>Commemorates Greece's entry into WWII</li>
+            <li>Parades across every town and school</li>
+          </ul>
+        </div>
+      </li>
+      <li class="tl-item reveal">
+        <span class="tl-date">Dec 25 – Jan 1</span>
+        <div class="tl-body">
+          <h3>Christmas &amp; New Year</h3>
+          <ul class="bullet-list tight">
+            <li>Children sing <em>kalanda</em> carols door to door</li>
+            <li>Coastal towns traditionally decorate boats, not trees</li>
+            <li>Saint Basil (not Santa) brings gifts on Jan 1st</li>
+            <li><em>Vasilopita</em> cake cut at midnight, with a coin hidden inside</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CULTURE ============ -->
+<section class="section section-dark" id="culture">
+  <div class="key-divider key-divider-light" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow eyebrow-light"><span class="gr">Πολιτισμός</span><span class="sep">·</span><span class="en">Culture</span></p>
+    <h2 class="h2 h2-light">Worn, played &amp; practiced</h2>
+    <div class="grid-3">
+      <div class="feature-card feature-card-dark reveal">
+        <img class="culture-photo" src="https://images.pexels.com/photos/15189533/pexels-photo-15189533.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Evzones presidential guards in traditional fustanella uniform, Athens" loading="lazy">
+        <h3>Clothing</h3>
+        <ul class="bullet-list tight">
+          <li>The <em>fustanella</em> — a pleated kilt, still worn by the Evzones presidential guard</li>
+          <li>400 pleats symbolise 400 years under Ottoman rule</li>
+          <li>Regional costumes vary by island, often richly embroidered</li>
+        </ul>
+      </div>
+      <div class="feature-card feature-card-dark reveal">
+        <img class="culture-photo" src="https://images.pexels.com/photos/31092776/pexels-photo-31092776.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Woman in traditional Greek costume at a cultural festival parade" loading="lazy">
+        <h3>Music &amp; Dance</h3>
+        <ul class="bullet-list tight">
+          <li>The <em>bouzouki</em>, a long-necked lute, anchors Greek folk music</li>
+          <li><em>Rebetiko</em> — Greece's own "blues," born from 1920s refugee communities</li>
+          <li>Circle dances like <em>sirtaki</em> and <em>kalamatianos</em></li>
+        </ul>
+      </div>
+      <div class="feature-card feature-card-dark reveal">
+        <img class="culture-photo" src="https://images.pexels.com/photos/16771782/pexels-photo-16771782.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Charming Greek taverna with welcoming outdoor seating" loading="lazy">
+        <h3>Customs</h3>
+        <ul class="bullet-list tight">
+          <li><em>Filoxenia</em> — hospitality as a near-sacred duty to guests</li>
+          <li>Name days (<em>giortές</em>) often celebrated more than birthdays</li>
+          <li><em>Komboloi</em> worry beads, clicked out of habit, not religion</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LANGUAGE ============ -->
+<section class="section" id="language">
+  <div class="key-divider" aria-hidden="true"></div>
+  <div class="wrap two-col reverse">
+    <div class="col-visual">
+      <div class="lang-card">
+        <p class="lang-alpha">Αα Ββ Γγ Δδ Εε Ζζ Ηη Θθ Ιι Κκ Λλ Μμ<br>Νν Ξξ Οο Ππ Ρρ Σσ Ττ Υυ Φφ Χχ Ψψ Ωω</p>
+        <span class="lang-alpha-label">the 24-letter Greek alphabet</span>
+      </div>
+    </div>
+    <div class="col-text">
+      <p class="eyebrow"><span class="gr">Γλώσσα</span><span class="sep">·</span><span class="en">Language</span></p>
+      <h2 class="h2">Words older than Rome</h2>
+      <ul class="bullet-list">
+        <li>Greek has over 3,000 years of continuous written history</li>
+        <li>Official language of Greece and Cyprus, ~13 million speakers</li>
+        <li>Root of huge parts of scientific &amp; medical vocabulary</li>
+      </ul>
+      <table class="word-table">
+        <tbody>
+          <tr><td class="gr-word">Ελλάδα</td><td class="translit">elláda</td><td class="meaning">Greece</td></tr>
+          <tr><td class="gr-word">Θάλασσα</td><td class="translit">thálassa</td><td class="meaning">sea</td></tr>
+          <tr><td class="gr-word">Δημοκρατία</td><td class="translit">dimokratía</td><td class="meaning">democracy</td></tr>
+          <tr><td class="gr-word">Φιλοξενία</td><td class="translit">filoxenía</td><td class="meaning">hospitality</td></tr>
+          <tr><td class="gr-word">Ευχαριστώ</td><td class="translit">efcharistó</td><td class="meaning">thank you</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GASTRONOMY ============ -->
+<section class="section section-menu" id="food">
+  <div class="key-divider" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow"><span class="gr">Γαστρονομία</span><span class="sep">·</span><span class="en">Gastronomy</span></p>
+    <h2 class="h2">What's on the table</h2>
+
+    <div class="menu-grid">
+      <div class="menu-card reveal">
+        <img class="menu-photo" src="https://images.pexels.com/photos/33691786/pexels-photo-33691786.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Fresh Greek horiatiki salad with feta, olives and tomatoes" loading="lazy">
+        <span class="menu-kicker">Daily meals</span>
+        <ul class="bullet-list tight">
+          <li>Breakfast: coffee, bread, honey, yogurt — light &amp; quick</li>
+          <li>Lunch is the main meal, often eaten 2–3pm</li>
+          <li>Dinner is late, sometimes after 9pm</li>
+          <li>Base ingredients: olive oil, vegetables, legumes, bread, cheese</li>
+        </ul>
+      </div>
+      <div class="menu-card reveal">
+        <img class="menu-photo" src="https://images.pexels.com/photos/17849254/pexels-photo-17849254.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Traditional Greek souvlaki, pita and tzatziki on a platter" loading="lazy">
+        <span class="menu-kicker">Street food</span>
+        <ul class="bullet-list tight">
+          <li><em>Souvlaki</em> — grilled meat skewers</li>
+          <li><em>Gyros</em> — spit-roasted meat in warm pita</li>
+          <li><em>Koulouri</em> — sesame bread ring, grabbed on the go</li>
+          <li><em>Spanakopita</em> — spinach &amp; feta pie</li>
+        </ul>
+      </div>
+      <div class="menu-card reveal">
+        <img class="menu-photo" src="https://images.pexels.com/photos/29535638/pexels-photo-29535638.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Homemade eggplant moussaka, Greece's classic baked dish" loading="lazy">
+        <span class="menu-kicker">National &amp; traditional</span>
+        <ul class="bullet-list tight">
+          <li><em>Moussaka</em> — eggplant, potato, minced meat, béchamel</li>
+          <li><em>Horiatiki</em> — the classic Greek salad</li>
+          <li><em>Tzatziki</em> — yogurt, cucumber, garlic dip</li>
+          <li><em>Fasolada</em> — bean soup, often called the national dish</li>
+        </ul>
+      </div>
+      <div class="menu-card reveal">
+        <img class="menu-photo" src="https://images.pexels.com/photos/20183046/pexels-photo-20183046.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Baklava with pistachio filling, a traditional Greek holiday sweet" loading="lazy">
+        <span class="menu-kicker">Holiday dishes</span>
+        <ul class="bullet-list tight">
+          <li>Easter: roast lamb, red eggs, <em>tsoureki</em> sweet bread</li>
+          <li><em>Magiritsa</em> — offal soup breaking the Lent fast</li>
+          <li>Christmas: <em>melomakarona</em> &amp; <em>kourabiedes</em> cookies</li>
+          <li>New Year: <em>vasilopita</em> cake with a hidden coin</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY / ISLANDS ============ -->
+<section class="section section-gallery" id="islands">
+  <div class="gallery-img" style="background-image:url('images/santorini.jpg')"></div>
+  <div class="gallery-overlay">
+    <p class="eyebrow eyebrow-light"><span class="gr">Νησιά</span><span class="sep">·</span><span class="en">Islands</span></p>
+    <h2 class="h2 h2-light">Whitewash, blue shutters,<br>and the Aegean below</h2>
+    <p class="lede lede-light">Cycladic houses are painted white to reflect the summer sun — and, by old belief, the blue trim keeps evil away.</p>
+  </div>
+</section>
+
+<!-- ============ FUN FACTS ============ -->
+<section class="section" id="facts">
+  <div class="key-divider" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="eyebrow"><span class="gr">Ξέρατε ότι...</span><span class="sep">·</span><span class="en">Fun Facts</span></p>
+    <h2 class="h2">Did you know?</h2>
+    <div class="facts-grid">
+      <div class="fact-card reveal"><p>Greece has around <strong>6,000 islands</strong> and islets — only 227 are inhabited.</p></div>
+      <div class="fact-card reveal"><p>Its coastline runs <strong>13,676 km</strong>, the longest in the Mediterranean.</p></div>
+      <div class="fact-card reveal"><p>Athens is widely considered the <strong>birthplace of democracy</strong> and Western philosophy.</p></div>
+      <div class="fact-card reveal"><p>The Olympic Games began in ancient Olympia around <strong>776 BC</strong>; the modern Games were revived in Athens in 1896.</p></div>
+      <div class="fact-card reveal"><p>Everyday English words like "democracy," "philosophy" and "mathematics" all come from <strong>Greek roots</strong>.</p></div>
+      <div class="fact-card reveal"><p>No point on the Greek mainland is more than <strong>137 km from the sea</strong>.</p></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-wrap">
+    <p class="footer-mark"><span class="gr">Ελλάδα</span> · Greece</p>
+    <p class="footer-note">Oral presentation companion site · photos of the Acropolis &amp; Santorini by Kevin Lee, Fran and Wolfart (Pexels)</p>
+  </div>
+</footer>
+
+<!-- ICON DEFS -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="icon-fustanella" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="14" r="7"/>
+      <path d="M22 24h20l4 8H18l4-8z"/>
+      <path d="M18 32 L14 54 M24 32 L21 54 M32 32 L32 54 M40 32 L37 54 M46 32 L50 54"/>
+      <path d="M14 54h36"/>
+    </g>
+    <g id="icon-bouzouki" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <ellipse cx="24" cy="42" rx="14" ry="16"/>
+      <path d="M28 28 L46 8"/>
+      <path d="M42 12 L50 20"/>
+      <circle cx="24" cy="42" r="4"/>
+      <path d="M18 34 L18 50 M30 34 L30 50" stroke-width="1.4"/>
+    </g>
+    <g id="icon-komboloi" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 8 v6" stroke-width="1.6"/>
+      <circle cx="32" cy="20" r="5"/>
+      <circle cx="22" cy="28" r="5"/>
+      <circle cx="42" cy="28" r="5"/>
+      <circle cx="18" cy="40" r="5"/>
+      <circle cx="46" cy="40" r="5"/>
+      <circle cx="26" cy="48" r="5"/>
+      <circle cx="38" cy="48" r="5"/>
+      <path d="M32 53 v5" stroke-width="1.6"/>
+    </g>
+  </defs>
+</svg>
+
+<script src="js/script.js"></script>
+</body>
+</html>
